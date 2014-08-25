@@ -9,19 +9,17 @@
 	<name>videoclub-domain</name>
 
 	<parent>
-		<groupId>uqbar</groupId>
+		<groupId>org.uqbar-project</groupId>
 		<artifactId>uqbar-parent-project</artifactId>
-		<version>1.4</version>
+		<version>1.7</version>
 	</parent>
-
-
+	
 	<dependencies>
 		<dependency>
-			<groupId>uqbar</groupId>
-			<artifactId>util-commons</artifactId>
-			<version>3.0.1-SNAPSHOT</version>
+			<groupId>org.uqbar-project</groupId>
+			<artifactId>uqbar-domain</artifactId>
+			<version>3.4-SNAPSHOT</version>
 		</dependency>
-
 
 		<!-- HOMES -->
 		<dependency>
