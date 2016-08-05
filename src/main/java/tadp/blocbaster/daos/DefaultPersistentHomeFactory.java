@@ -19,17 +19,17 @@ import tadp.blocbaster.entidades.mediosDePago.MedioDePago;
 public class DefaultPersistentHomeFactory implements HomeFactory {
 
 	@Override
-	public void addHomes(Map<Class<?>, Home<?>> homes) {
-		this.addHome(homes, 
+	public void addHomes(Map<Class<?>, Home<?>> home) {
+		this.addHome(home, 
 				Socio.class, 
 				MedioDePago.class, 
 				Pelicula.class,
 				Ciudad.class);
 	}
 
-	private void addHome(Map<Class<?>, Home<?>> homes, Class... entityType) {
+	private void addHome(Map<Class<?>, Home<?>> home, Class... entityType) {
 		for (Class clazz : entityType) {
-			homes.put(clazz, this.createHome(clazz));
+			home.put(clazz, this.createHome(clazz));
 		}
 	}
 
